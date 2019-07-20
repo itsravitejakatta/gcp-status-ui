@@ -1,0 +1,58 @@
+<div style="background: cadetblue;">
+  <table style="width: 100%">
+      <tr>
+          <td>
+              <img src="assets/logo.jpeg" alt="Kohl's" height="197" width="197">
+          </td>
+          <td style="width: 50%">
+              <h1>Environment Management</h1>
+          </td>
+          <td>
+              <input id="btnLogin" type="button" value="Log In" class="btnlogin" />
+             
+          </td>
+      </tr>
+  </table>
+  </div>
+  <br/><br /><br /><br /><br /><br />
+  <table align="center" style="width: 80%">
+      <tr>
+          <td>
+              <label>Region:</label>
+          </td>
+          <td>
+              <select class="Editabletxtbox" (input)="selectedRegion($event)">
+                  <option value="US">--SELECT--</option>
+                  <option value="us-central1">us-central1</option>
+              </select>
+          </td>
+          <td style="width:5%"></td>
+          <td>
+              <label>Project ID's:</label>
+          </td>
+          <td>
+              <select class="Editabletxtbox" (input)="selectedProjectId($event)">
+                  <option value="0">--SELECT--</option>
+                  <option value="cloud-migration-solution">cloud-migration-solution</option>
+              </select>
+          </td>
+          <td style="width:30%"></td>
+          <td>
+              <input id="btnQuery" type="button" value="Query" class="btnQuery" (click)=getListOfInstances()/>
+          </td>
+      </tr>
+      </table>
+  <br /><br /><br />
+  <table align="center" class="table" style="width:60%">
+      <tr>
+          <td class="td">Name</td>
+          <td class="td">Zone</td>
+          <td class="td">Status</td>
+      </tr>
+      <tr *ngFor="let item of instancesList;">
+          <td class="td">{{item.name}}</td>
+          <td class="td">{{item.zone}}</td>
+          <td class="td">{{item.status}}</td>
+      </tr>
+  </table>
+

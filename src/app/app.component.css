@@ -1,0 +1,37 @@
+<style>
+        .Editabletxtbox {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+            font-size: 100%;
+            font-weight: normal;
+           
+            width: 95%;
+        }
+        label {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+            font-size: 150% !important;
+            font-weight: normal;
+            color: black !important;
+        }
+        .btnlogin {
+            float: right;
+            width: 55%;
+            font-size: 130%;
+            background-color: #f1b976;
+            border: #f1b976;
+        }
+        .btnQuery {
+            width: 100%;
+            font-size: 140%;
+            background: cornflowerblue;
+        }
+        .table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .td {
+            padding: 5px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align:center;
+        }
